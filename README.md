@@ -13,11 +13,11 @@ transform property.
 ## Installation
 
 Add 'pane.css' to your css directory, and 'ie8-pane.js" to your js directory. Then create a link to the css in the
-`&lt;head&gt;` section:
+`<head>` section:
 
 `<link rel="stylesheet" href="css/pane.css">`
 
-And a conditional loading of the Javascript file at the end of your document, after your other `&lt;script&gt;` lines:
+And a conditional loading of the Javascript file at the end of your document, after your other `<script>` lines:
 
 ```html
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -47,7 +47,7 @@ There are a couple basic approaches to vertically centering a div of arbitrary s
 size. Setting `display: table-cell; vertical-align: middle` works in many cases, but it doesn't work if the outer div 
 is set to float, which Bootstrap columns are.
 
-The `transform: translateY(-50%)` approach (&lt;http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/&gt;)
+The `transform: translateY(-50%)` approach (http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/)
 works well with floating divs, but it isn't supported by IE8, surprise surprise. So, Javascript to the rescue.
 
 ## To-Do
