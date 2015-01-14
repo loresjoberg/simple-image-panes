@@ -1,0 +1,13 @@
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+    color: white;
+}
+
+.pane-outer {
+    color: white;
+    font-weight: bold;
+    height: 300px;
+}

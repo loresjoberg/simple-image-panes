@@ -1,0 +1,36 @@
+.pane-outer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.pane-inner {
+    position: relative;
+    display: table;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*-webkit-transform: translate(-50%,-50%);*/
+    /*-moz-transform: translate(-50%,-50%);*/
+    /*-o-transform: translate(-50%,-50%);*/
+    /*-ms-transform: translate(-50%,-50%);*/
+    /*transform: translate(-50%,-50%);*/
+}
+
+.focus-left {
+    background-position-x: 0;
+}
+
+.focus-right {
+    background-position-x: 100%;
+}
+
+.focus-top {
+    background-position-y: 0;
+}
+
+.focus-bottom {
+    background-position-y: 100%;
+}

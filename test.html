@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Image Panes for Bootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pane.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+<body>
+
+
+
+<div class="container">
+<div class="row">
+    <div class="col-md-4 pane-outer" style="background-image: url('img/rana-temporaria.jpg');">
+        <div class="pane-inner">
+            Photo by<br> <a href="http://commons.wikimedia.org/wiki/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg#mediaviewer/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg">Chmee2</a>
+        </div>
+    </div>
+    <div class="col-md-4 pane-outer" style="background-image: url('img/rana-temporaria.jpg');">
+            <div class="pane-inner">
+                Photo<br>is<br>totally by<br> <a href="http://commons.wikimedia.org/wiki/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg#mediaviewer/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg">Chmee2</a>
+
+            </div>
+    </div>
+    <div class="col-md-4 pane-outer" style="background-image: url('img/rana-temporaria.jpg');">
+        <div class="pane-inner">
+            Photo is totally by<br> <a href="http://commons.wikimedia.org/wiki/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg#mediaviewer/File:Rana_temporaria_in_nature_park_Trho%C5%88_in_2014_(2).jpg">Chmee2</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<p>Notes:</p>
+
+<p>The "display: table-cell" approach doesn't work out of the box, because you can't set a floating div to be a table
+cell.</p>
+
+<p>First thought: make a div inside the col, and make that 100% height and width. Problem: I can't seem to do that
+without using "position: absolute," which also means you can't make it a table-cell.</p>
+
+<p>If you make a regular div 100% width and height, it expands to fill the container. But if you then change it to
+display: table-cell, it shrinks back down.</p>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+<script src="js/ie8-pane.js"></script>
+<![endif]-->
+</body>
+</html>
